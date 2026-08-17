@@ -1,0 +1,225 @@
+/*
+Greens:
+  598b2c
+  33673b
+light green: #bbd686
+soft yellow/green: #eef1bd
+warm brown: #644536
+darker brown: #54442b
+*/
+
+body {
+    font-family: "Nunito", sans-serif;
+    background: linear-gradient(#598b2c, #33673b);
+    color: #bbd686;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+h2 {
+    margin-top: 50px;
+    font-size: 3.2vw;
+}
+
+.txt-shadow {
+    text-shadow: 0 0 1px black;
+}
+
+#header {
+    background-image: url("media/images/townscape-flat.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-img {
+    width: auto;
+    max-height: 900px;
+}
+
+#title {
+    margin-bottom: 20%;
+}
+
+#title, #subtitle {
+    background-color: hsla(19.57, 29.87%, 30.2%, 0.7);
+    padding: 0 20px;
+}
+
+#about-container {
+    border-bottom: #bbd686 1px solid;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#about-text {
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+#places-container {
+    margin-bottom: 70px;
+}
+
+#places-container, .places-container-row {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+
+    h2 {
+        font-size: larger;
+    }
+
+    #places-container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .places-container-row {
+        align-items: center;
+        flex-direction: column;
+    } 
+    
+    .card {
+        width: 80%;
+    }
+
+    #facts-experienc-container{
+        flex-direction: column;
+    }
+
+    #experience-wrapper {
+        border:none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #places-container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .places-container-row {
+        align-items: center;
+        flex-direction: column;
+    } 
+    
+    #facts-experienc-container{
+        flex-direction: column;
+    }
+
+    #experience-wrapper {
+        border:none;
+    }
+
+}
+
+@media only screen and (min-width: 850px) {
+    #places-container {
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .places-container-row {
+        justify-content: center;
+        flex-direction: row;
+    }  
+    
+    #facts-experienc-container{
+        flex-direction: row;
+    }
+
+    #experience-wrapper {
+        border-left:  1px solid #bbd686;
+    }
+}
+
+@media (min-width: 1700px) {
+    
+    #places-container {
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    .places-container-row {
+        justify-content: space-around;
+        flex-direction: row;
+    }
+}
+
+.card {
+    max-width: 400px;
+    height: 100%;
+    margin: 20px;
+    background: hsla(19.57, 29.87%, 30.2%, 0.7); /*hsla(36.59, 32.28%, 24.9%, 0.7);*/
+    border-radius: 10px;
+    color: #eef1bd;
+    box-shadow: 2px 2px 4px black;
+}
+
+.card-img {
+    width: 80%;
+    border: solid 2px #eef1bd;
+    margin: 30px auto;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 5px black;
+}
+
+.card-title {
+    margin: 0 auto 10px auto;
+    font-style: italic;
+}
+
+.card-text{
+    width: 80%;
+    height: 25%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+#facts-experienc-container{
+    display: flex;
+}
+
+#facts-table {
+    margin: 20px auto;
+    width: fit-content;
+    padding: 0 20px;
+}
+
+table {
+    border-spacing: 20px 50px;
+}
+
+th {
+    text-align: end;
+    border-right: 1px solid #bbd686;
+    padding-right: 20px;
+}
+
+td {
+    text-align: start;
+}
+
+#experience-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+audio, video {
+    width: 80%;
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+#footer {
+    margin-top: 50px;
+}
